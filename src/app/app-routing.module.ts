@@ -4,12 +4,12 @@ import { RoutineReportComponent } from './components/routine-report/routine-repo
 import { ExpenceReportComponent } from './components/expence-report/expence-report.component';
 
 const routes: Routes = [
-  { path: 'routine-report', component: RoutineReportComponent },
-  { path: 'expence-report', component: ExpenceReportComponent },
+    { path: 'routine-report', component: RoutineReportComponent },
+    { path: 'expence-report', component: ExpenceReportComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
 })
 export class AppRoutingModule {}

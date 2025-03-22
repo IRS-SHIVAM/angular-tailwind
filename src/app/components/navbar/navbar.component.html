@@ -1,26 +1,28 @@
-<div class="w-full p-2 flex h-20 sticky top-0 bg-white font-mono font-bold">
+<div
+    class="w-full flex h-10 sm:h-16 sticky top-0 bg-white font-mono font-bold text-[10px] sm:text-base"
+>
     <div class="grow relative border-black border-2">
         <a
-            class="w-full py-5 text-center absolute top-2 left-2 cursor-pointer z-10"
+            class="w-full py-3 sm:py-5 h-full text-center absolute cursor-pointer z-10 top-0 left-0 transition-all"
             routerLink="/"
-            routerLinkActive="bg-black text-white"
+            routerLinkActive="bg-black text-white  top-1 left-1 sm:top-2 sm:left-2"
             [routerLinkActiveOptions]="{ exact: true }"
             >Home</a
         >
     </div>
     <div class="grow relative border-black border-y-2">
         <a
-            class="w-full py-5 text-center absolute top-2 left-2 cursor-pointer z-10"
+            class="w-full py-3 sm:py-5 h-full text-center absolute cursor-pointer z-10 top-0 left-0 transition-all"
             routerLink="/routine-report"
-            routerLinkActive="bg-black text-white"
+            routerLinkActive="bg-black text-white sm:top-2 sm:left-2 top-1 left-1"
             >Routine-report</a
         >
     </div>
     <div class="grow relative border-black border-2">
         <a
-            class="w-full py-5 text-center absolute top-2 left-2 cursor-pointer z-10"
+            class="w-full py-3 sm:py-5 h-full text-center absolute cursor-pointer z-10 top-0 left-0 transition-all"
             routerLink="/expence-report"
-            routerLinkActive="bg-black text-white"
+            routerLinkActive="bg-black text-white sm:top-2 sm:left-2 top-1 left-1"
             >Expence-report</a
         >
     </div>

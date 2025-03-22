@@ -1,1 +1,52 @@
-<p>routine-report works!</p>
+<fieldset
+    class="mt-5 border-4 p-3 sm:p-5 w-full border-black m-auto rounded-xl shadow-[5px_5px_.5px_black] sm:shadow-[10px_10px_1px_black] text-[13px] sm:text-base"
+>
+    <legend class="p-2">Task Editor</legend>
+    <div class="flex">
+        <div class="relative w-3/4 h-10 sm:h-14">
+            <input
+                type="text"
+                id="fn"
+                class="border-black border-2 px-3 sm:px-5 peer text-xs sm:text-xl outline-none w-full h-full"
+                required
+                #taskInput
+            />
+            <label
+                for="fn"
+                class="absolute top-3 left-3 sm:top-4 sm:left-5 bg-white px-1 peer-focus:-top-2 peer-valid:-top-2 peer-focus:text-[11px] peer-valid:text-[11px] transition-all duration-300"
+                >Add Task</label
+            >
+        </div>
+        <div class="border-2 ml-4 w-1/4 h-10 sm:h-14 border-black relative">
+            <button
+                class="bg-black text-white absolute w-full h-full top-1 left-1 sm:top-2 sm:left-2 active:top-0 active:left-0 transition-all"
+                (click)="addTask(taskInput.value)"
+            >
+                Done
+            </button>
+        </div>
+    </div>
+    <div class="overflow-y-scroll h-56 w-full border-2 border-black mt-5">
+        <div class="p-2" *ngFor="let task of tasks; index as i">
+            <div
+                class="flex w-full sm:p-2 p-1 border items-center hover:bg-gray-300"
+            >
+                <div class="w-4/5">{{ task }}</div>
+                <div class="relative h-7 sm:h-10 w-1/5 border border-black">
+                    <button
+                        class="bg-black text-white absolute w-full h-full top-1 -right-1 sm:top-1 sm:-right-1 active:top-0 active:right-0 transition-all"
+                        (click)="removeTask(i)"
+                    >
+                        delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset
+    class="mt-5 border-4 p-3 sm:p-5 w-full border-black m-auto rounded-xl shadow-[5px_5px_.5px_black] sm:shadow-[10px_10px_1px_black] text-[13px] sm:text-base"
+>
+    <legend>Task Reporting</legend>
+</fieldset>
