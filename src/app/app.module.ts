@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { RoutineReportComponent } from './components/routine-report/routine-report.component';
 import { ExpenceReportComponent } from './components/expence-report/expence-report.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { YesSvgComponent } from './components/yes-svg/yes-svg.component';
+import { NoSvgComponent } from './components/no-svg/no-svg.component';
+import { PendingSvgComponent } from './components/pending-svg/pending-svg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoutineReportComponent,
     ExpenceReportComponent,
-    NavbarComponent
+    NavbarComponent,
+    YesSvgComponent,
+    NoSvgComponent,
+    PendingSvgComponent
   ],
   imports: [
     BrowserModule,
